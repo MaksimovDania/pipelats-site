@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>pipelats — AI for downhole data</title>
+<meta name="description" content="pipelats helps oilfield service companies become more technology-driven: AI models built from your archive and shipped inside your own software.">
+<meta property="og:title" content="pipelats — AI that reads downhole data">
+<meta property="og:description" content="Built from your archive, shipped inside your software">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230593c6'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23fcffff' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='5.5' fill='none' stroke='%23fcffff' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23fcffff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<script>/* draft palette: ?theme=night | sky (default), remembered between visits */
+try { var t = new URLSearchParams(location.search).get('theme') || localStorage.getItem('pl-theme'); } catch (e) {}
+document.documentElement.dataset.theme = t === 'night' ? 'night' : 'sky';</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__bar">
+    <a class="logo" href="#top" aria-label="pipelats home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><circle cx="12" cy="12" r="5.5"/><circle class="dot" cx="12" cy="12" r="2.2" stroke="none"/></svg>
+      pipelats
+    </a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#what">What we do</a>
+      <a href="#case">Case study</a>
+    </nav>
+    <a class="btn btn--white btn--sm" href="#talk">Book a call</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero band">
+  <div class="tex" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><b></b></div>
+  <div class="wrap">
+    <div class="hero__in">
+      <h1 class="rv">AI that reads downhole data</h1>
+      <p class="sub rv" style="--i:1">Built from your archive, shipped inside your software</p>
+      <div class="cta-row rv" style="--i:2">
+        <a class="btn btn--white" href="#talk">Book a call <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="#what">See what we do</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT WE DO ============ -->
+<section class="sec" id="what">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="rv">From raw logs to a model in your software</h2>
+      <p class="sub rv" style="--i:1">Pick one stage or run the whole path</p>
+    </div>
+
+    <div class="fx rv" id="fx">
+      <div class="fx__rows">
+        <div class="fx__row">
+          <div class="g"><h4></h4><div class="chain"><button class="nd" data-t="Raw logs" data-d="your archive of tool records and interpretations">raw logs</button></div></div>
+          <i class="cn"></i>
+          <div class="g"><h4>Build the data</h4><div class="chain"><button class="nd" data-t="Build the data" data-d="cleaned, aligned and labelled together with your interpreters">dataset</button><i class="sl"></i><i class="sl"></i><i class="sl"></i></div></div>
+          <i class="cn"></i>
+          <div class="g"><h4>Train the model</h4><div class="chain"><button class="nd" data-t="Train the model" data-d="learns from your archive which intervals deserve a look">model</button><i class="sl"></i><i class="sl"></i><i class="sl"></i></div></div>
+          <i class="cn"></i>
+          <div class="g"><h4>Prove it blind</h4><div class="chain"><button class="nd" data-t="Prove it blind" data-d="tested on wells the model has never seen, metrics counted in metres">blind test</button><i class="sl"></i><i class="sl"></i><i class="sl"></i></div></div>
+        </div>
+        <div class="fx__row fx__row--rev">
+          <div class="g"><h4>Ship it in your software</h4><div class="chain"><button class="nd" data-t="Ship it in your software" data-d="an offline module with a plain interface, connected to your tools">module</button><i class="sl"></i><i class="sl"></i><i class="sl"></i><i class="sl"></i></div></div>
+          <i class="cn"></i>
+          <div class="g"><h4>Engineer decides</h4><div class="chain"><button class="nd" data-t="Engineer decides" data-d="the model suggests, the engineer reviews and signs off">engineer</button><i class="sl"></i><i class="sl"></i><i class="sl"></i><i class="sl"></i></div></div>
+          <i class="cn"></i>
+          <div class="g"><h4>Draft the report</h4><div class="chain"><button class="nd" data-t="Draft the report" data-d="from the model's results to a document">report</button></div></div>
+        </div>
+        <i class="turn" aria-hidden="true"></i>
+      </div>
+      <p class="fx__log" aria-live="polite"><b>&gt;/</b><span class="t"></span> <span class="d"></span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASE STUDY (separate) ============ -->
+<section class="case" id="case">
+  <div class="casebox band">
+    <div class="tex" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><b></b></div>
+    <div class="casepin">
+    <div class="casepin__stick">
+    <div class="wrap">
+      <div class="case__head">
+        <h2 class="rv">Casing corrosion: a short list, not every metre</h2>
+        <p class="rv" style="--i:1" data-c="C04">A service company in the Middle East, pilot in progress</p>
+      </div>
+
+      <div class="app rv">
+        <div class="app__bar"><div class="app__dots"><i></i><i></i><i></i></div><div class="app__title"><b>WELL-A1</b> · casing inspection · synthetic data</div><div></div></div>
+        <div class="app__body">
+          <div class="app__plot"><canvas id="caseLog" role="img" aria-label="Illustration of the case walkthrough on a synthetic well log"></canvas></div>
+          <div class="case__text" id="caseText">
+            <ol class="csteps">
+              <li class="on"><button><span>1</span>Signal</button><p>Tool channels along the whole well</p></li>
+              <li><button><span>2</span>Baseline</button><p>The model learns what healthy steel looks like</p></li>
+              <li><button><span>3</span>Flags</button><p>A short list, each flag with a confidence</p></li>
+              <li><button><span>4</span>Verdict</button><p>Read less, decide faster: the engineer signs off from the short list</p></li>
+            </ol>
+            <ul class="legend" aria-hidden="true"><li><i></i>Tool signal</li><li><i class="base"></i>Baseline</li><li><i class="flag"></i>Model flag</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="wrap casestats">
+      <div class="stats rv" data-c="C01">
+        <div class="stat">
+          <p>Damaged metres inside the flags</p>
+          <div class="ringw"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="trk" cx="60" cy="60" r="50"/><circle class="val" cx="60" cy="60" r="50" pathLength="100" style="--o:11"/></svg><b>≈<span data-count="89">89</span><small>%</small></b></div>
+          <span class="sm">40 blind wells</span>
+        </div>
+        <div class="stat">
+          <p>Shorter list to check</p>
+          <b>3–4<small>×</small></b>
+          <div class="cmp" aria-hidden="true"><div><span>All</span><i style="--w:100%"></i></div><div class="a"><span>Flagged</span><i style="--w:27%"></i></div></div>
+        </div>
+        <div class="stat">
+          <p>To read 1.3 km, offline</p>
+          <b>~<span data-count="7">7</span><small>s</small></b>
+          <div><div class="scan" aria-hidden="true"></div><div class="ends"><span>0</span><span>1.3 km</span></div></div>
+        </div>
+      </div>
+      <p class="fine">Share of metres with 20% or more metal loss inside the flags, on 40 wells held out when choosing the threshold. The model flags generously. Small sample: new wells are validated first. Development data, 2026.<br>Offline module · Blind evaluation · <span data-c="C05">Integration under test</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM + CTA ============ -->
+<section class="sec" id="team" style="padding-bottom:0">
+  <div class="wrap">
+    <p class="team rv" data-c="C06"><b>Team</b>Product · Engineering · ML · A practising interpreter · <span data-c="C07">ITMO Accelerator</span></p>
+  </div>
+</section>
+
+<section class="cta" id="talk">
+  <div class="wrap">
+    <div class="cta__box band rv">
+      <div class="tex" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><b></b></div>
+      <h2>Bring us a messy archive</h2>
+      <div class="cta__row">
+        <a class="btn btn--white" href="mailto:hello@pipelats.com?subject=Call">Book a call <span class="arr" aria-hidden="true">→</span></a>
+        <span class="mail" data-c="C08">hello@pipelats.com</span>
+      </div>
+      <svg class="cta__rings" viewBox="-12 -12 224 224" aria-hidden="true"><circle cx="100" cy="100" r="92" stroke-width="20"/><circle cx="100" cy="100" r="66" stroke-width="14"/><circle cx="100" cy="100" r="42" stroke-width="8"/></svg>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <a class="logo" href="#top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><circle cx="12" cy="12" r="5.5"/><circle class="dot" cx="12" cy="12" r="2.2" stroke="none"/></svg>pipelats</a>
+    <p>pipe + LAS, with a nod to a Soviet machine that flies across the desert</p>
+    <span>Synthetic illustrations · © 2026 pipelats</span>
+  </div>
+</footer>
+
+<div class="theme" role="group" aria-label="Palette (draft only)"><button data-t="sky" aria-pressed="true">A · Sky</button><button data-t="night" aria-pressed="false">B · Midnight</button></div>
+
+<script src="assets/wellog.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
